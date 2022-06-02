@@ -15,6 +15,9 @@ function App() {
       setCartItems(cartItems.map(x => x.id === product.id ? {...exist, qty: exist.qty +1} : x
         )
       );
+    } else {
+      setCartItems([...cartItems, {...products, qty: 1}])
+      
     }
   };
   return (
