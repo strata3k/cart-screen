@@ -24,8 +24,8 @@ function App() {
     <div className="App">
       <Header></Header>
       <div className="row">
-        <Main products={products}></Main>
-        <Basket cartItems={cartItems}></Basket>
+        <Main onAdd={onAdd} products={products}></Main>
+        <Basket onAdd={onAdd} cartItems={cartItems}></Basket>
       </div>
     </div>
   );
